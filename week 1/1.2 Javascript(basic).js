@@ -169,3 +169,52 @@ if (number2%2==0) {
     
 
 
+        //Assignment #5
+    // Write a function that takes a user as an input and greets them with their name and age
+
+function great(user){
+   console.log("halo " + user.name3 + " your age is" + user.age2 );
+   
+}
+
+let user = {
+ name3 : "rahi",
+age2 : 25
+}
+
+great(user);
+
+        // Assignment #2
+    // Write a function that takes a new object as input which has name , age  and gender and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21)
+
+    function great2(user2){
+
+        console.log("hi "+ user2.gender + user2.name4 + " and your age is "+ user2.age3  );
+        
+        
+        
+    }
+
+let user2 ={
+    name4 : "haguromo",
+    age3: 55,
+    gender: "Mr."
+}
+
+// great2(user2)
+
+
+        // Assignment 5
+    // Write a function that takes an array of numbers as input, and returns a new array with only even values. Read about filter in JS
+
+    function filterEvenNumbers(arr) {
+        return arr.filter(function(number) {
+            return number % 2 === 0;
+        });
+    }
+    
+    // Example usage:
+    const numbers4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const evenNumbers = filterEvenNumbers(numbers4);
+    console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
+    
