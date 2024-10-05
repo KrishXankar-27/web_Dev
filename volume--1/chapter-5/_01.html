@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The character set is defined here to support all languages. UTF-8 is a common choice. -->
+    <meta charset="UTF-8">
+    
+    <!-- This makes sure the page works well on different devices by setting the correct scaling. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title appears on the browser tab. -->
+    <title>Forms</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <!-- Main heading of the page, describing some placeholder content -->
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
+
+    <!-- This label is connected to the input field for first name -->
+    <label for="firstname">First Name</label>
+
+    <!-- 
+        The form where user can enter their details.
+        - `action="url"`: Replace this with the server endpoint where the form data will go.
+        - `method="get"`: This sends the form data in the URL, use `post` for sensitive info.
+    -->
+    <form action="url" method="get">
+        <!-- 
+            Text input where the user enters their first name.
+            - `placeholder="name"`: Placeholder text inside the input field.
+            - `id="firstname"`: Unique ID for this input, matching the label's `for` attribute.
+        -->
+        <input type="text" placeholder="name" id="firstname">
+    </form>
+</body>
+</html>
+
+<!-- 
+Explanation (Code Focused)
+DOCTYPE and Language
+
+<!DOCTYPE html> tells the browser that this is an HTML5 document.
+<html lang="en"> declares the language as English.
+Head Section
+
+<meta charset="UTF-8">: Specifies that the character encoding is UTF-8, which covers most characters and languages.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures the page scales correctly on different devices (like mobile phones or tablets).
+<title>: The title of the page that shows up on the browser's tab.
+Body Styling
+
+style="background-color: #212121; color: aliceblue;": Inline CSS that changes the background color to dark gray and text color to white.
+Heading
+
+<h1>: A main heading (level 1) on the page. The content here is just placeholder text.
+Form and Label
+
+<form action="url" method="get">: Creates a form.
+action="url": Where the form data is sent. Replace "url" with the actual server endpoint.
+method="get": The form will send data via the URL. If security is important, use method="post", which hides data from the URL.
+Input Field
+
+<input type="text" placeholder="name" id="firstname">: Creates a text input where the user can enter their first name.
+placeholder="name": The placeholder text displayed inside the input box.
+id="firstname": Connects the input field to the label (for="firstname").
+What Else Can Be Used?
+For Secure Data Transmission
+
+Use method="post" if sensitive data is being sent. It hides data from being displayed in the URL.
+Example: <form action="url" method="post">.
+Form Validation
+
+Add required to make the input mandatory.
+Example: <input type="text" id="firstname" placeholder="name" required>.
+More Input Types
+
+You can use different input types for different data:
+Email: <input type="email" placeholder="email">
+Password: <input type="password" placeholder="password">
+CSS Styles
+
+Instead of using style attributes directly in HTML, use a separate CSS file to keep styles and structure separated.
+-->

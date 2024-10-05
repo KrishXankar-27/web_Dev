@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set definition for encoding -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures the webpage is responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>Media</title>
+</head>
+<body>
+    <!-- Video tag for embedding a video -->
+    <video height="450" controls>
+        <!-- 
+            The source for the video is specified using the <source> tag.
+            This is intended for a direct video file URL, not a YouTube link.
+            YouTube videos should be embedded with an <iframe> element.
+        -->
+        <source src="video.mp4" type="video/mp4">
+        <!-- Fallback message if the browser can't play the video -->
+        Your browser does not support the video tag.
+        <!-- Embedding a YouTube video using an iframe -->
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/psj5mIzI9IY" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+    </video>
+</body>
+</html>
+<!-- 
+Explanation of the Code
+DOCTYPE and Language Declaration:
+
+<!DOCTYPE html>: Declares the document type as HTML5.
+<html lang="en">: Sets the language of the document to English.
+Head Section:
+
+<meta charset="UTF-8">: Specifies that the character encoding is UTF-8, which is widely supported.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures that the page is responsive on different devices by controlling the viewport settings.
+<title>Media</title>: The title that appears on the browser tab.
+Body Section:
+
+<video height="450" controls>: Creates a video player with a height of 450 pixels. The controls attribute adds playback controls (play, pause, etc.).
+<source src="video.mp4" type="video/mp4">: The src attribute points to the video file. This should be a direct video file URL (e.g., an .mp4 file).
+"Your browser does not support the video tag.": A fallback message if the user's browser does not support the HTML5 <video> element.
+
+Key Changes:
+Use <iframe> for YouTube:
+
+The src should contain the correct YouTube embed URL: https://www.youtube.com/embed/[video_id].
+Replace psj5mIzI9IY with the actual YouTube video ID from your original link.
+Height and Width:
+
+Set width and height to match your desired video dimensions, such as width="560" and height="315".
+Allow Fullscreen and Controls:
+
+The allow attribute grants permissions for certain features, like autoplay and fullscreen.
+Final Notes:
+Video Files: Use the <video> tag for actual video files like .mp4 that are hosted on your server.
+YouTube: Use <iframe> to embed videos from platforms like YouTube.
+-->
