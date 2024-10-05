@@ -1,0 +1,22 @@
+body{
+
+    color: aliceblue;
+   
+}
+p{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: initial;
+    display: inline ;
+    background-color: blue;
+}
+html{
+    background: url(https://i.pinimg.com/736x/7a/0d/c2/7a0dc24f568b81a39ba1ce797f65d355.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-position: center ;
+    
+}
+span{
+    background-color: yellowgreen;
+    display: block;
+}

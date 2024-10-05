@@ -1,0 +1,7 @@
+h2:hover{
+    background-color: blueviolet;
+}
+p::after{
+    content:"hallo guys";
+    color: chocolate;
+}

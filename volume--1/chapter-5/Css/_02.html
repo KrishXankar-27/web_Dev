@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent, Child, Grandchild, and Sibling Example</title>
+    <link rel="stylesheet" href="/volume--1/chapter-5/Css/_02.css">
+</head>
+<body>
+    <!-- Parent element (container 1) -->
+    <div class="container">
+        <h1>Container 1</h1>
+        <p>This is content inside the first container.</p>
+        
+        <!-- First Child inside Container 1 -->
+        <div class="child">
+            <h2>Child 1 of Container 1</h2>
+            <p>This is content inside the first child of Container 1.</p>
+            
+            <!-- Grandchild inside Child 1 -->
+            <div class="grandchild">
+                <h3>Grandchild of Child 1</h3>
+                <p>This is content inside the grandchild of Child 1.</p>
+            </div>
+        </div>
+        
+        <!-- Sibling of the first child inside Container 1 -->
+        <div class="child sibling">
+            <h2>Child 2 of Container 1 (Sibling of Child 1)</h2>
+            <p>This is content inside the second child (sibling) of Container 1.</p>
+        </div>
+    </div>
+    <!-- Closing Parent element (container 1) -->
+
+    <!-- Parent element (container 2) with siblings -->
+    <div class="container">
+        <h1>Container 2</h1>
+        <p>This is content inside the second container.</p>
+        
+        <!-- First Child inside Container 2 -->
+        <div class="child">
+            <h2>Child 1 of Container 2</h2>
+            <p>This is content inside the first child of Container 2.</p>
+        </div>
+
+        <!-- Sibling of the first child inside Container 2 -->
+        <div class="child sibling">
+            <h2>Child 2 of Container 2 (Sibling of Child 1)</h2>
+            <p>This is content inside the second child (sibling) of Container 2.</p>
+            
+            <!-- Grandchild inside Child 2 -->
+            <div class="grandchild">
+                <h3>Grandchild of Child 2</h3>
+                <p>This is content inside the grandchild of Child 2.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Closing Parent element (container 2) -->
+</body>
+</html>
