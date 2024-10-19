@@ -59,10 +59,5 @@ console.log(obj['age']);
 let anss =  function ans (){
     return('console');
     
-}
-
-
-
-
-
+} 
 console.log( anss());
