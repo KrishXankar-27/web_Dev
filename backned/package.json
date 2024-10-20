@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Krishnendu",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "accessibility": "^6.0.6"
+  }
 }
