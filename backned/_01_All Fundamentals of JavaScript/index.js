@@ -4,9 +4,8 @@
 // async js coding
 // forEach , map  , filter , find indexof
 
-// for each
-
 let arr = [1 ,2 ,3 , 4, 9 , 8 , 10 , 2 , 4 ,5 ,1 ,2 ]
+// for each
 
 arr.forEach(function (val) {
     // console.log(val + " halo ");
